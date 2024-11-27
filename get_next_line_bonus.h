@@ -1,9 +1,9 @@
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 #ifndef BUFFER_SIZE
 
-# define BUFFER_SIZE 1100
+# define BUFFER_SIZE 11
 #endif
 
 # include <unistd.h>
@@ -23,5 +23,6 @@ void    protected_alloc(char **saved, char **allocated);
 size_t	ft_strlen(const char *str);
 char    *ft_get_line(char **saved, int readen);
 int	    ft_strcmp(char *s1, char *s2);
+int     while_loop(char **saved, char **allocated, int fd);
 
 #endif
